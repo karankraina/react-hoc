@@ -1,12 +1,12 @@
 {
-  "name": "react-hoc",
+  "name": "raina-react-hoc",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
     "build": "babel src --out-dir lib",
-    "prepublish": "babel src --out-dir lib",
+    "prepare": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,13 +14,17 @@
   "babel": {
     "presets": [
       "es2015",
-      "@babel/preset-react"
+      "react"
     ]
   },
   "devDependencies": {
     "@babel/preset-react": "^7.7.4",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "babel-cli": "^6.26.0"
   }
 }
