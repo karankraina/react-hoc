@@ -1,7 +1,8 @@
 {
   "name": "raina-react-hoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
+  "homepage": "https://github.com/karankraina/react-hoc#readme",
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
@@ -9,7 +10,12 @@
     "prepare": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": ["react hoc", "react", "error handling in react"],
+  "author": "Karan Raina",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karankraina/react-hoc.git"
+  },
   "license": "ISC",
   "babel": {
     "presets": [
