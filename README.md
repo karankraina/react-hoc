@@ -11,6 +11,10 @@ npm i raina-react-hoc
 ```javascript
 import {ErrorBoundary} from 'raina-react-hoc'
 
+// This is the component you want your component to fallback to
+// in case of an error
+const ErrorComp = () => <p>Error Here</p>
+
 // This can be any component
 const Component = ({ title, text }) => (
     <div className="article">
@@ -19,6 +23,8 @@ const Component = ({ title, text }) => (
     </div>
 );
 
-export default ErrorBoundary(Component, 'Your Error Message Here...');
+// Second argument is optional. If not provided, the component
+// will display an error message
+export default ErrorBoundary(Component,ErrorComp);
 ```
 
